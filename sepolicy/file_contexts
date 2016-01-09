@@ -34,3 +34,31 @@
 #/efs/prox_cal							u:object_r:sensors_efs_file:s0
 /efs/wifi/.mac.info						u:object_r:wifi_efs_file:s0
 
+
+# MSM camera related
+/dev/media([0-9])+              u:object_r:camera_device:s0
+/dev/jpeg[0-9]*                 u:object_r:camera_device:s0
+
+/dev/bcm2079x-i2c                  u:object_r:nfc_device:s0
+
+#/system binaries
+/system/bin/adspd               u:object_r:adspd_exec:s0
+/system/bin/bdAddrLoader        u:object_r:bluetooth_loader_exec:s0
+/system/bin/bridgemgrd          u:object_r:bridge_exec:s0
+/system/vendor/bin/gsiff_daemon u:object_r:gsiffd_exec:s0
+/system/bin/init\.mmi\.touch\.sh u:object_r:mmi_touch_sh_exec:s0
+/system/bin/irsc_util           u:object_r:irsc_util_exec:s0
+/system/bin/ks                  u:object_r:mdm_helper_exec:s0
+/system/bin/mdm_helper          u:object_r:mdm_helper_exec:s0
+/system/bin/mdm_helper_proxy    u:object_r:mdm_helper_exec:s0
+/system/bin/mm-qcamera-daemon   u:object_r:camera_exec:s0
+/system/bin/mpdecision          u:object_r:mpdecision_exec:s0
+/system/bin/netmgrd             u:object_r:netmgrd_exec:s0
+/system/bin/qmuxd               u:object_r:qmux_exec:s0
+/system/bin/qseecomd            u:object_r:tee_exec:s0
+/system/bin/sensors\.qcom       u:object_r:sensors_exec:s0
+/system/bin/subsystem_ramdump   u:object_r:ss_ramdump_exec:s0
+/system/bin/thermal-engine      u:object_r:thermald_exec:s0
+/system/bin/time_daemon         u:object_r:time_exec:s0
+/system/bin/tcmd_mini           u:object_r:tcmd_exec:s0
+/system/bin/ATFWD-daemon        u:object_r:atfwd_exec:s0

@@ -3,3 +3,4 @@ type gsiffd_data_file, data_file_type, file_type;
 type quipc_data_file, data_file_type, file_type;
 type sensors_efs_file, file_type;
 type wifi_efs_file, file_type;
+type camera_socket, file_type;
