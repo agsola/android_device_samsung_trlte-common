@@ -1,10 +1,10 @@
 # DELETE: #lib/hw/camera.apq8084.so
+lib/hw/camera.apq8084.so
 
 
 
 # new to add that we didn't have
-lib/hw/camera.apq8084.so
-lib/hw/camera.msm8084.so
+#lib/hw/camera.msm8084.so
 lib/libmm-qcamera.so
 vendor/lib/libactuator_lc898122_camcorder.so
 vendor/lib/libactuator_lc898122_camera.so
