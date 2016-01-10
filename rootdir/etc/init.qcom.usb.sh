@@ -165,14 +165,24 @@ case "$target" in
         echo ssusb > /sys/bus/platform/devices/usb_bam/enable
     ;;
     "apq8084")
-	if [ "$baseband" == "apq" ]; then
-		echo "msm_hsic_host" > /sys/bus/platform/drivers/xhci_msm_hsic/unbind
-	fi
+  if [ "$baseband" == "apq" ]; then
+    echo "msm_hsic_host" > /sys/bus/platform/drivers/xhci_msm_hsic/unbind
+  fi
 
-	if [ "$esoc_link" == "PCIe" ] || [ "$esoc_link" == "HSIC+PCIe" ]; then
-	      echo 2 > /sys/module/g_android/parameters/tx_qmult
-	      echo 1036800 > /sys/module/g_android/parameters/min_cpu_freq
-	fi
+  if [ "$esoc_link" == "PCIe" ] || [ "$esoc_link" == "HSIC+PCIe" ]; then
+        echo 2 > /sys/module/g_android/parameters/tx_qmult
+        echo 1036800 > /sys/module/g_android/parameters/min_cpu_freq
+  fi
+    ;;
+    "msm8084")
+  if [ "$baseband" == "apq" ]; then
+    echo "msm_hsic_host" > /sys/bus/platform/drivers/xhci_msm_hsic/unbind
+  fi
+
+  if [ "$esoc_link" == "PCIe" ] || [ "$esoc_link" == "HSIC+PCIe" ]; then
+        echo 2 > /sys/module/g_android/parameters/tx_qmult
+        echo 1036800 > /sys/module/g_android/parameters/min_cpu_freq
+  fi
     ;;
     "msm8226")
          if [ -e /sys/bus/platform/drivers/msm_hsic_host ]; then
