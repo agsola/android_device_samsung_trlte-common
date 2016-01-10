@@ -105,7 +105,7 @@ PRODUCT_PACKAGES += \
     libqomx_core \
     libmmcamera_interface \
     libmmjpeg_interface \
-    camera.msm8084 \
+    camera.apq8084 \
     mm-jpeg-interface-test \
     mm-qcamera-app
 
