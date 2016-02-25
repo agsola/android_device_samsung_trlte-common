@@ -108,8 +108,8 @@ PRODUCT_PACKAGES += \
     Snap
     
 # Charger
-PRODUCT_PACKAGES += \		
-    charger_res_images		
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 # Display
 PRODUCT_PACKAGES += \
