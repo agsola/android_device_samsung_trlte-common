@@ -20,6 +20,7 @@
 LOCAL_PATH := device/samsung/trlte-common
 
 # Architecture
+ENABLE_CPUSETS := true
 TARGET_CPU_VARIANT := krait
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
