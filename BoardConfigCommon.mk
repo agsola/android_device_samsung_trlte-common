@@ -56,7 +56,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 #BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/trlte-common/cmhw
+BOARD_HARDWARE_CLASS := device/samsung/trlte-common/cmhw
 
 # Display
 BOARD_EGL_CFG := device/samsung/trlte-common/configs/egl.cfg
