@@ -148,11 +148,15 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 BOARD_VOLD_MAX_PARTITIONS := 28
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
-# Enable dex-preoptimization to speed up first boot sequence
+# Enable dex pre-opt to speed up initial boot
 ifeq ($(HOST_OS),linux)
-  ifeq ($(TARGET_BUILD_VARIANT),user)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
+  ifeq ($(WITH_DEXPREOPT),)
+    WITH_DEXPREOPT := true
+    WITH_DEXPREOPT_PIC := true
+    WITH_DEXPREOPT_BOOT_IMG_ONLY := true
+    ifneq ($(TARGET_BUILD_VARIANT),user)
+      # Retain classes.dex in APK's for non-user builds
+      DEX_PREOPT_DEFAULT := nostripping
     endif
   endif
 endif
