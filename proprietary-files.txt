@@ -309,21 +309,6 @@ lib/libvcsfp.so
 lib/libvfmClient.so
 lib/libvfmtztransport.so
 
-# GPS
-bin/loc_launcher
-lib/hw/gps.default.so
-lib/libgps.utils.so
-lib/libloc_api_v02.so
-lib/libloc_eng.so
-lib/libloc_core.so
-vendor/lib/hw/flp.default.so
-vendor/lib/libalarmservice_jni.so
-vendor/lib/libgeofence.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
-vendor/lib/liblocationservice.so
-vendor/lib/libulp2.so
-
 # Graphics
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libQTapGLES.so
@@ -334,8 +319,9 @@ vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libC2D2.so
-vendor/lib/libc2d30-a4xx.so
 vendor/lib/libc2d30-a3xx.so
+vendor/lib/libc2d30-a4xx.so
+vendor/lib/libc2d30-a5xx.so
 vendor/lib/libCB.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-qcom.so
@@ -348,8 +334,8 @@ vendor/lib/librs_adreno_sha1.so
 vendor/lib/libscale.so
 
 # Graphics firmware
-etc/firmware/a420_pfp.fw
-etc/firmware/a420_pm4.fw
+vendor/firmware/a420_pfp.fw
+vendor/firmware/a420_pm4.fw
 
 # IPC router security
 bin/irsc_util
